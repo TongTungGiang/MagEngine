@@ -1,7 +1,9 @@
 #include "MagEngine.h"
 
-MagEngine::MagEngine()
+namespace MagEngine
 {
+    MagEngine::MagEngine()
+    {
 
+    }
 }
-

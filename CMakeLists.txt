@@ -95,11 +95,19 @@ if (NOT OGRE_BUILD_PLATFORM_IPHONE)
 endif()
  
 set(HDRS
+	#Engine header files
 	./Engine/MagEngine.h
+	./Engine/Core/Object.h
+	./Engine/Core/Component.h
 )
  
 set(SRCS
+	#Engine source files
 	./Engine/MagEngine.cpp
+	./Engine/Core/Object.cpp
+	./Engine/Core/Component.cpp
+
+	#Demo source files
 	./Demo/main.cpp
 )
  
