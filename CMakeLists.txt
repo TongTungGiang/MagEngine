@@ -99,6 +99,7 @@ set(HDRS
 	./Engine/MagEngine.h
 	./Engine/Core/Object.h
 	./Engine/Core/Component.h
+	./Engine/Core/GameActor.h
 )
  
 set(SRCS
@@ -106,6 +107,7 @@ set(SRCS
 	./Engine/MagEngine.cpp
 	./Engine/Core/Object.cpp
 	./Engine/Core/Component.cpp
+	./Engine/Core/GameActor.cpp
 
 	#Demo source files
 	./Demo/main.cpp

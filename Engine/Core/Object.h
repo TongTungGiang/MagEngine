@@ -27,7 +27,7 @@ namespace MagEngine
 		Object(const std::string &name);
 
 		// Get functions
-		std::string getName();
+		const std::string& getName();
 		int getUniqueID();
 
 		// Set functions

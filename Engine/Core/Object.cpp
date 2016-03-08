@@ -10,13 +10,13 @@ namespace MagEngine
     }
 
 	Object::Object(const std::string &name)
+		: name(name)
 	{
 		static int ID = 0;
 		uniqueID = ++ID;
-		this->name = name;
 	}
 
-	std::string Object::getName()
+	const std::string& Object::getName()
 	{
 		return name;
 	}
