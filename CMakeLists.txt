@@ -100,6 +100,9 @@ set(HDRS
 	./Engine/Core/Object.h
 	./Engine/Core/Component.h
 	./Engine/Core/GameActor.h
+	
+	#Demo header files
+	./Demo/Game.h
 )
  
 set(SRCS
@@ -111,6 +114,7 @@ set(SRCS
 
 	#Demo source files
 	./Demo/main.cpp
+	./Demo/Game.cpp
 )
  
 include_directories( ${OIS_INCLUDE_DIRS}

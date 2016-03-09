@@ -1,6 +1,10 @@
 #include "../Engine/MagEngine.h"
 
+#include "Game.h"
+
 int main()
 {
-    return 0;
+	Game::getInstance()->run();
+
+	return 0;
 }

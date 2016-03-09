@@ -27,5 +27,9 @@
 *.out
 *.app
 
+# Kdevelop specifics
+.kdev4/
+*.kdev4
+
 # Build directory
 build/
