@@ -6,34 +6,34 @@
 namespace MagEngine
 {
 
-	/* ----
-	 * Base class of all Game Object, Component classes
-	 */
-    class Object
-    {
+/* ----
+ * Base class of all Game Object, Component classes
+ */
+class Object
+{
 
-	protected:
+protected:
 
-		// Object's name
-		std::string name;
+    // Object's name
+    std::string name;
 
-		// Object's unique ID
-		int uniqueID;
+    // Object's unique ID
+    int uniqueID;
 
-    public:
+public:
 
-		// Constructors
-        Object();
-		Object(const std::string &name);
+    // Constructors
+    Object();
+    Object(const std::string &name);
 
-		// Get functions
-		const std::string& getName();
-		int getUniqueID();
+    // Get functions
+    const std::string& getName();
+    int getUniqueID();
 
-		// Set functions
-		void setName(const std::string &name);
+    // Set functions
+    virtual void setName(const std::string &name);
 
-    };
+};
 
 }
 

@@ -3,14 +3,14 @@
 namespace MagEngine
 {
 
-    Component::Component()
-		: Object()
-    {		
-    }
+Component::Component()
+    : Object()
+{
+}
 
-	Component::Component(const std::string &name)
-		: Object(name)
-    {
-    }
+Component::Component(const std::string &name)
+    : Object(name)
+{
+}
 
 }

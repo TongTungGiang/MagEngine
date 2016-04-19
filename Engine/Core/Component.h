@@ -6,18 +6,18 @@
 namespace MagEngine
 {
 
-    /* ----
-     * Base class of everything that can be attached to a Game Object
-     */
-    class Component : public Object
-    {
+/* ----
+ * Base class of everything that can be attached to a Game Object
+ */
+class Component : public Object
+{
 
-    public:
+public:
 
-		Component();
-		Component(const std::string &name);
+    Component();
+    Component(const std::string &name);
 
-    };
+};
 }
 
 #endif // COMPONENT_H

@@ -96,10 +96,12 @@ endif()
  
 set(HDRS
 	#Engine header files
+        ./Engine/Prerequisites.h
 	./Engine/MagEngine.h
 	./Engine/Core/Object.h
 	./Engine/Core/Component.h
 	./Engine/Core/GameActor.h
+        ./Engine/Core/Transform.h
 	
 	#Demo header files
 	./Demo/Game.h
@@ -111,6 +113,7 @@ set(SRCS
 	./Engine/Core/Object.cpp
 	./Engine/Core/Component.cpp
 	./Engine/Core/GameActor.cpp
+        ./Engine/Core/Transform.cpp
 
 	#Demo source files
 	./Demo/main.cpp
