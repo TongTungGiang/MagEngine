@@ -63,7 +63,7 @@ void Game::run()
 	createInput();
 	setupResourceManager();
 
-	Ogre::Entity *ogreHead = sceneManager->createEntity("OgreHead", "ogrehead.mesh");
+	Ogre::Entity *ogreHead = sceneManager->createEntity("OgreHead", "T80_obj.mesh");
 	Ogre::SceneNode *ogreHeadNode = sceneManager->getRootSceneNode()
 									->createChildSceneNode("Head Node", Ogre::Vector3(-50.0f, 30.0f, 0.0f));
 	ogreHeadNode->attachObject(ogreHead);
@@ -89,7 +89,7 @@ void Game::createCamera()
 	if (sceneManager != NULL)
 	{
 		camera = sceneManager->createCamera("MainCam");
-		camera->setPosition(Ogre::Vector3(0, 300, 300));
+		camera->setPosition(Ogre::Vector3(1000, 1000, 1000));
 		camera->lookAt(Ogre::Vector3(0, 0, 0));
 		camera->setNearClipDistance(5);
 	}
@@ -117,16 +117,24 @@ void Game::createViewport()
 
 void Game::setupResourceManager()
 {
-	Ogre::String resourcesCfg;
+//	Ogre::String resourcesCfg;
 
-#ifdef _DEBUG
-	resourcesCfg = "resources_d.cfg";
-#else
-	resourcesCfg = "resources.cfg";
-#endif
+//#ifdef _DEBUG
+//	resourcesCfg = "resources_d.cfg";
+//#else
+//	resourcesCfg = "resources.cfg";
+//#endif
 
-	Ogre::ConfigFile cf;
-	cf.load(resourcesCfg);
+//	Ogre::ConfigFile cf;
+//	cf.load(resourcesCfg);
+
+	Ogre::ResourceGroupManager::getSingleton().addResourceLocation("../media/", "FileSystem", "General");
+	Ogre::ResourceGroupManager::getSingleton().addResourceLocation("../media/materials/scripts", "FileSystem", "General");
+	Ogre::ResourceGroupManager::getSingleton().addResourceLocation("../media/materials/textures", "FileSystem", "General");
+	Ogre::ResourceGroupManager::getSingleton().addResourceLocation("../media/models", "FileSystem", "General");
+	Ogre::ResourceGroupManager::getSingleton().addResourceLocation("../media/packs", "FileSystem", "General");
+	Ogre::ResourceGroupManager::getSingleton().initialiseResourceGroup("General");
+	Ogre::ResourceGroupManager::getSingleton().loadResourceGroup("General");
 
 
 // 	Ogre::ConfigFile::SectionIterator seci = cf.getSectionIterator();
