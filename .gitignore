@@ -33,4 +33,7 @@ CMakeLists.txt.*
 *.kdev4
 
 # Build directory
-build/
+build/*
+!build/dist/
+build/dist/bin/*
+!build/dist/media
