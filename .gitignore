@@ -12,7 +12,7 @@
 *.so
 *.dylib
 *.dll
-CMakeList.txt.*
+CMakeLists.txt.*
 
 # Fortran module files
 *.mod
