@@ -98,10 +98,13 @@ set(HDRS
 	#Engine header files
         ./Engine/Prerequisites.h
 	./Engine/MagEngine.h
+
 	./Engine/Core/Object.h
 	./Engine/Core/Component.h
 	./Engine/Core/GameActor.h
         ./Engine/Core/Transform.h
+
+	./Engine/Factory/ComponentFactory.h
 	
 	#Demo header files
 	./Demo/Game.h
@@ -110,10 +113,13 @@ set(HDRS
 set(SRCS
 	#Engine source files
 	./Engine/MagEngine.cpp
+
 	./Engine/Core/Object.cpp
 	./Engine/Core/Component.cpp
 	./Engine/Core/GameActor.cpp
         ./Engine/Core/Transform.cpp
+
+	./Engine/Factory/ComponentFactory.cpp
 
 	#Demo source files
 	./Demo/main.cpp

@@ -6,8 +6,12 @@
 namespace MagEngine
 {
 
-/* ----
- * Base class of all Game Object, Component classes
+/***
+ *
+ * Object
+ *
+ * Base class of all GameActor, Component classes
+ *
  */
 class Object
 {
