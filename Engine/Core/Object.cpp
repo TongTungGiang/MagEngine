@@ -1,5 +1,7 @@
 #include "Object.h"
 
+#include <iostream> // testing purpose
+
 namespace MagEngine
 {
 Object::Object()
@@ -14,6 +16,8 @@ Object::Object(const std::string &name)
 {
     static int ID = 0;
     uniqueID = ++ID;
+
+	std::cout << "Created an object with name = " << name << " ID = " << uniqueID << std::endl;
 }
 
 const std::string& Object::getName()

@@ -35,8 +35,8 @@ class Transform : public Object
 public:
 
 	// Constructors and destructors
-    Transform();
-    Transform(const std::string &name);
+    Transform(GameActor* owner);
+    Transform(const std::string &name, GameActor* owner);
 
     // Getter functions
 	GameActor* getOwner();

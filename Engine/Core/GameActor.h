@@ -5,6 +5,8 @@
 #include "Transform.h"
 #include "Component.h"
 
+#include "../Factory/ComponentFactory.h"
+
 #include <vector>
 
 namespace MagEngine
@@ -26,8 +28,17 @@ public:
     GameActor();
     GameActor(const std::string &name);
 
-    // Getter functions
+    // Get transform information of the Game Actor
     Transform* getTransform();
+
+	// Get first component of type
+	Component* getComponent(ComponentType type);
+
+	// Get components of type
+	std::vector<Component*> getComponents(ComponentType type);
+
+	// Add new component to the game object
+	bool addComponent(ComponentType type);
 
     // Setter functions
     virtual void setName(const std::string &name);

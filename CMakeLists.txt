@@ -105,6 +105,7 @@ set(HDRS
         ./Engine/Core/Transform.h
 
 	./Engine/Factory/ComponentFactory.h
+	./Engine/Factory/ComponentFactoryInitializer.h
 	
 	#Demo header files
 	./Demo/Game.h
@@ -120,6 +121,7 @@ set(SRCS
         ./Engine/Core/Transform.cpp
 
 	./Engine/Factory/ComponentFactory.cpp
+	./Engine/Factory/ComponentFactoryInitializer.cpp
 
 	#Demo source files
 	./Demo/main.cpp
