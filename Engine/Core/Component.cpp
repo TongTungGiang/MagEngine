@@ -1,19 +1,19 @@
 #include "Component.h"
+#include "GameActor.h"
 
-#include <algorithm>>
+#include <algorithm>
 
 namespace MagEngine
 {
 
-Component::Component()
-    : Object()
+Component::Component(GameActor* owner)
+    : Object(), owner(owner)
 {
 }
 
-Component::Component(const std::string &name)
-    : Object(name)
+Component::Component(const std::string &name, GameActor* owner)
+    : Object(name), owner(owner)
 {
-
 }
 
 Component::~Component()

@@ -2,6 +2,7 @@
 #define COMPONENTFACTORY_H
 
 #include "../Core/Component.h"
+#include "../Core/GameActor.h"
 
 #include <map>
 
@@ -19,7 +20,7 @@ class ComponentFactory
 {
 
 	// Factory method
-	virtual Component* create() = 0;
+	virtual Component* create(GameActor* owner) = 0;
 
 	// The map of factory objects
 	static std::map<ComponentType, ComponentFactory*> factories;
@@ -32,7 +33,7 @@ public:
 
 	friend class ComponentFactoryInitializer;
 
-	static Component* createComponent(ComponentType id);
+	static Component* createComponent(GameActor* owner, ComponentType id);
 
 };
 

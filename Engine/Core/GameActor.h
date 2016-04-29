@@ -38,7 +38,7 @@ public:
 	std::vector<Component*> getComponents(ComponentType type);
 
 	// Add new component to the game object
-	bool addComponent(ComponentType type);
+	Component* addComponent(ComponentType type);
 
     // Setter functions
     virtual void setName(const std::string &name);

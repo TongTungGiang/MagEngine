@@ -9,10 +9,10 @@ ComponentFactory::ComponentFactory()
 {
 }
 
-Component* ComponentFactory::createComponent(ComponentType id)
+Component* ComponentFactory::createComponent(GameActor* owner, ComponentType id)
 {
 	if (factories.find(id) != factories	.end())
-		return factories[id]->create();
+		return factories[id]->create(owner);
 }
 
 }

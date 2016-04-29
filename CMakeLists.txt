@@ -99,8 +99,11 @@ set(HDRS
         ./Engine/Prerequisites.h
 	./Engine/MagEngine.h
 
+	./Engine/Components/Camera/Camera.h
+
 	./Engine/Core/Object.h
 	./Engine/Core/Component.h
+	./Engine/Core/ComponentType.h
 	./Engine/Core/GameActor.h
         ./Engine/Core/Transform.h
 
@@ -114,6 +117,8 @@ set(HDRS
 set(SRCS
 	#Engine source files
 	./Engine/MagEngine.cpp
+
+	./Engine/Components/Camera/Camera.cpp
 
 	./Engine/Core/Object.cpp
 	./Engine/Core/Component.cpp

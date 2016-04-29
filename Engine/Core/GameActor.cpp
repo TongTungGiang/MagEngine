@@ -51,4 +51,12 @@ std::vector<Component*> GameActor::getComponents(ComponentType type)
 	return result;
 }
 
+Component* GameActor::addComponent(ComponentType type)
+{
+	Component* newComponent = ComponentFactory::createComponent(this, type);
+	components.push_back(newComponent);
+
+	return newComponent;
+}
+
 }

@@ -2,30 +2,28 @@
 #define COMPONENT_H
 
 #include "Object.h"
+#include "ComponentType.h"
 
 #include <vector>
 
 namespace MagEngine
 {
 
+// -----
+// Forward declarations
+
 /***
+ * GameActor
  *
- * ComponentType
- *
- * The enum defines ID for component types
+ * The base class of an Object that can be placed or spawned in a level.
+ * A GameActor may contain some Component instances which define its appearance, behavior and functionality.
  *
  */
-enum ComponentType
-{
-	// Renderer section
-	RENDERER,
+class GameActor;
 
-	// Nav mesh section
-	NAVMESHAGENT,
+	// End Forward declaration
+// -----
 
-	// Camera section
-	CAMERA
-};
 
 /***
  *
@@ -37,12 +35,13 @@ enum ComponentType
 class Component : public Object
 {
 
-private:
+protected:
+
+	// Every component has an owner of type GameActor
+	GameActor* owner;
 
 	// A component may have many tags - for example, a mesh renderer is a renderer, so it has 'Renderer' and 'Mesh Renderer' tag at once
 	std::vector<ComponentType> componentTags;
-
-protected:
 
 	// Add a new tag to the component
 	void addTag(ComponentType newTag);
@@ -50,8 +49,8 @@ protected:
 public:
 
 	// Constructors and Destructors
-    Component();
-    Component(const std::string &name);
+    Component(GameActor* owner);
+    Component(const std::string &name, GameActor* owner);
 	~Component();
 
 	// Check if the component has the desired tag or not
