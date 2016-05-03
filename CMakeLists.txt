@@ -109,6 +109,8 @@ set(HDRS
 
 	./Engine/Factory/ComponentFactory.h
 	./Engine/Factory/ComponentFactoryInitializer.h
+
+	./Engine/Subsystems/LogicLayer/GameState.h
 	
 	#Demo header files
 	./Demo/Game.h
@@ -127,6 +129,8 @@ set(SRCS
 
 	./Engine/Factory/ComponentFactory.cpp
 	./Engine/Factory/ComponentFactoryInitializer.cpp
+
+	./Engine/Subsystems/LogicLayer/GameState.cpp
 
 	#Demo source files
 	./Demo/main.cpp
