@@ -1,7 +1,7 @@
 #ifndef MAGENGINE_H
 #define MAGENGINE_H
 
-#include "Core/GameActor.h"
+#include "GameActor.h"
 
 namespace MagEngine
 {

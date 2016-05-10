@@ -5,7 +5,7 @@
 #include "Transform.h"
 #include "Component.h"
 
-#include "../Factory/ComponentFactory.h"
+#include "ComponentFactory.h"
 
 #include <vector>
 

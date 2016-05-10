@@ -141,6 +141,12 @@ include_directories( ${OIS_INCLUDE_DIRS}
 	${OGRE_INCLUDE_DIRS}
 	${OGRE_SAMPLES_INCLUDEPATH}
 	${OGRE_Overlay_INCLUDE_DIRS}
+	${PROJECT_SOURCE_DIR}/Engine
+	${PROJECT_SOURCE_DIR}/Engine/Components
+	${PROJECT_SOURCE_DIR}/Engine/Core
+	${PROJECT_SOURCE_DIR}/Engine/Factory
+	${PROJECT_SOURCE_DIR}/Engine/Subsystems
+	${PROJECT_SOURCE_DIR}/Engine/Subsystems/LogicLayer
 )
  
 add_executable(MagEngine WIN32 ${HDRS} ${SRCS})

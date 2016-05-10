@@ -1,8 +1,8 @@
 #ifndef COMPONENTFACTORY_H
 #define COMPONENTFACTORY_H
 
-#include "../Core/Component.h"
-#include "../Core/GameActor.h"
+#include "Component.h"
+#include "GameActor.h"
 
 #include <map>
 
