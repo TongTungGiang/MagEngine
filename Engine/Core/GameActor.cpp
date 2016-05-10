@@ -31,6 +31,7 @@ void GameActor::setName(const std::string &name)
 
 Component* GameActor::getComponent(ComponentType type)
 {
+    std::cout << "Actor" << this->getName() << " has " << this->components.size() << " components." << std::endl;
 	for (int i = 0; i < components.size(); i++)
 	{
 		if (components[i]->isOfType(type))

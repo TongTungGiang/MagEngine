@@ -17,5 +17,8 @@ int main()
 	MagEngine::Component* camera = actor->getComponent(MagEngine::CAMERA);
 	std::cout << "Actor " << actor->getName() << " now has camera: " << camera->getName() << std::endl;
 
+    std::vector<MagEngine::Component*> cameras = actor->getComponents(MagEngine::CAMERA);
+    std::cout << "Actor " << actor->getName() << " has " << cameras.size() << " cameras" << std::endl;
+
 	return 0;
 }

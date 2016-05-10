@@ -21,7 +21,7 @@ namespace MagEngine
  */
 class GameActor;
 
-	// End Forward declaration
+// End Forward declaration
 // -----
 
 

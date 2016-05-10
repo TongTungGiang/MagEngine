@@ -1,8 +1,8 @@
 #ifndef CAMERA_H
 #define CAMERA_H
 
-#include "../../Core/Component.h"
-#include "../../Factory/ComponentFactory.h"
+#include "Component.h"
+#include "ComponentFactory.h"
 
 namespace MagEngine
 {
@@ -16,8 +16,6 @@ namespace MagEngine
  */
 class Camera : public Component
 {
-
-private:
 
 public:
 
