@@ -110,6 +110,8 @@ set(HDRS
 	./Engine/Factory/ComponentFactory.h
 	./Engine/Factory/ComponentFactoryInitializer.h
 
+        ./Engine/Subsystems/ApplicationLayer/InputSystem.h
+
 	./Engine/Subsystems/LogicLayer/GameState.h
 	
 	#Demo header files
@@ -130,6 +132,8 @@ set(SRCS
 	./Engine/Factory/ComponentFactory.cpp
 	./Engine/Factory/ComponentFactoryInitializer.cpp
 
+        ./Engine/Subsystems/ApplicationLayer/InputSystem.h
+
 	./Engine/Subsystems/LogicLayer/GameState.cpp
 
 	#Demo source files
@@ -145,8 +149,9 @@ include_directories( ${OIS_INCLUDE_DIRS}
 	${PROJECT_SOURCE_DIR}/Engine/Components
 	${PROJECT_SOURCE_DIR}/Engine/Core
 	${PROJECT_SOURCE_DIR}/Engine/Factory
-	${PROJECT_SOURCE_DIR}/Engine/Subsystems
-	${PROJECT_SOURCE_DIR}/Engine/Subsystems/LogicLayer
+        ${PROJECT_SOURCE_DIR}/Engine/Subsystems
+        ${PROJECT_SOURCE_DIR}/Engine/Subsystems/ApplicationLayer
+        ${PROJECT_SOURCE_DIR}/Engine/Subsystems/LogicLayer
 )
  
 add_executable(MagEngine WIN32 ${HDRS} ${SRCS})
