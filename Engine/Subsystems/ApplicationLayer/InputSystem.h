@@ -4,9 +4,6 @@
 namespace MagEngine
 {
 
-typedef Mouse OIS::Mouse;
-typedef Keyboard OIS::Keyboard;
-
 class InputSystem
 {
 

@@ -5,14 +5,16 @@
 
 namespace MagEngine
 {
+
 class MagEngine
 {
 
-    public:
+public:
 
-        MagEngine();
+	MagEngine();
 
-    };
+};
+
 }
 
 #endif // MAGENGINE_H

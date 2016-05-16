@@ -1,0 +1,11 @@
+#ifndef SUBSYSTEMSINITIALIZER_H
+#define SUBSYSTEMSINITIALIZER_H
+
+namespace MagEngine
+{
+
+
+
+}
+
+#endif // SUBSYSTEMSINITIALIZER_H

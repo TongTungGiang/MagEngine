@@ -114,6 +114,8 @@ set(HDRS
 
         ./Engine/Subsystems/LogicLayer/GameState.h
         ./Engine/Subsystems/LogicLayer/GameStateManager.h
+
+        ./Engine/Subsystems/SubsystemsInitializer.h
 	
 	#Demo header files
 	./Demo/Game.h
@@ -137,6 +139,8 @@ set(SRCS
 
 	./Engine/Subsystems/LogicLayer/GameState.cpp
         ./Engine/Subsystems/LogicLayer/GameStateManager.cpp
+
+        ./Engine/Subsystems/SubsystemsInitializer.cpp
 
 	#Demo source files
 	./Demo/main.cpp
