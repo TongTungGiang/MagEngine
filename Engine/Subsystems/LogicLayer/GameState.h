@@ -1,6 +1,8 @@
 #ifndef GAMESTATE_H
 #define GAMESTATE_H
 
+#include <Ogre.h>
+
 namespace MagEngine
 {
 
@@ -16,12 +18,29 @@ class GameState
 
 public:
 
-	GameState();
-
 	virtual void update() = 0;
 
 	virtual bool onEnter() = 0;
 	virtual bool onExit() = 0;
+
+	virtual void pause() = 0;
+	virtual void resume() = 0;
+
+	int getNextStateID();
+	int getStateID();
+
+	void setNextStateID(int nextStateID);
+
+protected:
+
+	// Constructors
+	GameState() {}
+
+	int stateID;
+
+private:
+
+	int nextStateID;
 
 };
 

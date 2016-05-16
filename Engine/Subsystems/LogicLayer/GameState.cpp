@@ -3,9 +3,19 @@
 namespace MagEngine
 {
 
-GameState::GameState()
+int GameState::getNextStateID()
 {
+	return nextStateID;
+}
 
+int GameState::getStateID()
+{
+	return stateID;
+}
+
+void GameState::setNextStateID(int nextStateID)
+{
+	this->nextStateID = nextStateID;
 }
 
 }
