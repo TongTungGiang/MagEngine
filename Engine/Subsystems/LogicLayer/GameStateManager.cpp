@@ -4,8 +4,8 @@ namespace MagEngine
 {
 
 GameStateManager::GameStateManager()
+	: Subsystem()
 {
-	gameStates();
 }
 
 void GameStateManager::pushState(GameState* state)

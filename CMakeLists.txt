@@ -112,10 +112,13 @@ set(HDRS
 
         ./Engine/Subsystems/ApplicationLayer/InputSystem.h
 
-        ./Engine/Subsystems/LogicLayer/GameState.h
+        ./Engine/Subsystems/LogicLayer/Objects/GameState.h
+        ./Engine/Subsystems/LogicLayer/Objects/BaseMessage.h
+
         ./Engine/Subsystems/LogicLayer/GameStateManager.h
 
         ./Engine/Subsystems/SubsystemsInitializer.h
+        ./Engine/Subsystems/Subsystem.h
 	
 	#Demo header files
 	./Demo/Game.h
@@ -135,12 +138,15 @@ set(SRCS
 	./Engine/Factory/ComponentFactory.cpp
 	./Engine/Factory/ComponentFactoryInitializer.cpp
 
-        ./Engine/Subsystems/ApplicationLayer/InputSystem.h
+        ./Engine/Subsystems/ApplicationLayer/InputSystem.cpp
 
-	./Engine/Subsystems/LogicLayer/GameState.cpp
+        ./Engine/Subsystems/LogicLayer/Objects/GameState.cpp
+        ./Engine/Subsystems/LogicLayer/Objects/BaseMessage.cpp
+
         ./Engine/Subsystems/LogicLayer/GameStateManager.cpp
 
         ./Engine/Subsystems/SubsystemsInitializer.cpp
+        ./Engine/Subsystems/Subsystem.cpp
 
 	#Demo source files
 	./Demo/main.cpp
@@ -158,6 +164,7 @@ include_directories( ${OIS_INCLUDE_DIRS}
         ${PROJECT_SOURCE_DIR}/Engine/Subsystems
         ${PROJECT_SOURCE_DIR}/Engine/Subsystems/ApplicationLayer
         ${PROJECT_SOURCE_DIR}/Engine/Subsystems/LogicLayer
+        ${PROJECT_SOURCE_DIR}/Engine/Subsystems/LogicLayer/Objects
 )
  
 add_executable(MagEngine WIN32 ${HDRS} ${SRCS})

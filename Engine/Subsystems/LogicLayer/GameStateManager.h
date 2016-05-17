@@ -1,6 +1,7 @@
 #ifndef GAMESTATEMANAGER_H
 #define GAMESTATEMANAGER_H
 
+#include "Subsystem.h"
 #include "GameState.h"
 
 #include <vector>
@@ -18,7 +19,7 @@ namespace MagEngine
  * - Pop: remove current state.
  *
  */
-class GameStateManager
+class GameStateManager : Subsystem
 {
 
 public:

@@ -1,10 +1,12 @@
 #ifndef INPUTSYSTEM_H
 #define INPUTSYSTEM_H
 
+#include "Subsystem.h"
+
 namespace MagEngine
 {
 
-class InputSystem
+class InputSystem : public Subsystem
 {
 
 };
