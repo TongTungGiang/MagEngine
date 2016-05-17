@@ -1,5 +1,5 @@
-#ifndef IBASEMESSAGE_H
-#define IBASEMESSAGE_H
+#ifndef BASEMESSAGE_H
+#define BASEMESSAGE_H
 
 namespace MagEngine
 {
@@ -28,4 +28,4 @@ public:
 
 }
 
-#endif // IBASEMESSAGE_H
+#endif // BASEMESSAGE_H
