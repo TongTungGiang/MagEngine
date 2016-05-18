@@ -24,6 +24,10 @@ public:
 
 	MessageType messageType;
 
+protected:
+
+	virtual ~BaseMessage() {}
+
 };
 
 }

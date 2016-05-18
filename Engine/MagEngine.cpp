@@ -2,8 +2,10 @@
 
 namespace MagEngine
 {
-    MagEngine::MagEngine()
-    {
 
-    }
+MagEngine::MagEngine()
+{
+
+}
+
 }

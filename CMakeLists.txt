@@ -112,10 +112,10 @@ set(HDRS
 
         ./Engine/Subsystems/ApplicationLayer/InputSystem.h
 
-        ./Engine/Subsystems/LogicLayer/Objects/GameState.h
-        ./Engine/Subsystems/LogicLayer/Objects/BaseMessage.h
+        ./Engine/Subsystems/LogicLayer/Messaging/BaseMessage.h
 
-        ./Engine/Subsystems/LogicLayer/GameStateManager.h
+        ./Engine/Subsystems/LogicLayer/GameState/GameState.h
+        ./Engine/Subsystems/LogicLayer/GameState/GameStateManager.h
 
         ./Engine/Subsystems/SubsystemsInitializer.h
         ./Engine/Subsystems/Subsystem.h
@@ -140,10 +140,10 @@ set(SRCS
 
         ./Engine/Subsystems/ApplicationLayer/InputSystem.cpp
 
-        ./Engine/Subsystems/LogicLayer/Objects/GameState.cpp
-        ./Engine/Subsystems/LogicLayer/Objects/BaseMessage.cpp
+        ./Engine/Subsystems/LogicLayer/Messaging/BaseMessage.cpp
 
-        ./Engine/Subsystems/LogicLayer/GameStateManager.cpp
+        ./Engine/Subsystems/LogicLayer/GameState/GameState.cpp
+        ./Engine/Subsystems/LogicLayer/GameState/GameStateManager.cpp
 
         ./Engine/Subsystems/SubsystemsInitializer.cpp
         ./Engine/Subsystems/Subsystem.cpp
