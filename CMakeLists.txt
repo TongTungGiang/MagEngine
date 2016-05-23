@@ -112,7 +112,8 @@ set(HDRS
 
         ./Engine/Subsystems/ApplicationLayer/InputSystem.h
 
-        ./Engine/Subsystems/LogicLayer/Messaging/BaseMessage.h
+        ./Engine/Subsystems/LogicLayer/Messaging/IBaseEvent.h
+        ./Engine/Subsystems/LogicLayer/Messaging/IEventManager.h
 
         ./Engine/Subsystems/LogicLayer/GameState/GameState.h
         ./Engine/Subsystems/LogicLayer/GameState/GameStateManager.h
@@ -140,8 +141,6 @@ set(SRCS
 
         ./Engine/Subsystems/ApplicationLayer/InputSystem.cpp
 
-        ./Engine/Subsystems/LogicLayer/Messaging/BaseMessage.cpp
-
         ./Engine/Subsystems/LogicLayer/GameState/GameState.cpp
         ./Engine/Subsystems/LogicLayer/GameState/GameStateManager.cpp
 
@@ -164,7 +163,8 @@ include_directories( ${OIS_INCLUDE_DIRS}
         ${PROJECT_SOURCE_DIR}/Engine/Subsystems
         ${PROJECT_SOURCE_DIR}/Engine/Subsystems/ApplicationLayer
         ${PROJECT_SOURCE_DIR}/Engine/Subsystems/LogicLayer
-        ${PROJECT_SOURCE_DIR}/Engine/Subsystems/LogicLayer/Objects
+        ${PROJECT_SOURCE_DIR}/Engine/Subsystems/LogicLayer/GameState
+        ${PROJECT_SOURCE_DIR}/Engine/Subsystems/LogicLayer/Messaging
 )
  
 add_executable(MagEngine WIN32 ${HDRS} ${SRCS})
