@@ -2,6 +2,7 @@
 #define IEVENTMANAGER_H
 
 #include "IBaseEvent.h"
+#include "IEventListenerDelegate.h"
 
 namespace MagEngine
 {
@@ -20,16 +21,20 @@ public:
 
 	// Registers a delegate function that will get called when the event type is triggered.
 	// Returns true if successful, false if not
-	virtual bool addListener() = 0;
+	template<class E> // template for event classes
+	template<class D> // template for delegate classes
+	virtual bool addListener(const E* event, const D* eventDelegate) = 0;
 
-	// Removes a delegate - event type pairing. Retursn false if the pairing was not found
-	virtual bool removeListener() = 0;
+	// Removes a delegate - event type pairing. Returns false if the pairing was not found
+	template<class E> // template for event classes
+	template<class D> // template for delegate classes
+	virtual bool removeListener(const E* event, const D* eventDelegate) = 0;
 
 	// Fires off event
 	virtual bool triggerEvent() = 0;
 
 	// Singleton getter function
-	static IEventManager* get() = 0;
+	virtual static IEventManager* get() = 0;
 
 };
 

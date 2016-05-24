@@ -97,23 +97,26 @@ endif()
 set(HDRS
 	#Engine header files
         ./Engine/Prerequisites.h
-	./Engine/MagEngine.h
+		./Engine/MagEngine.h
 
-	./Engine/Components/Camera/Camera.h
+		./Engine/Components/Camera/Camera.h
 
-	./Engine/Core/Object.h
-	./Engine/Core/Component.h
-	./Engine/Core/ComponentType.h
-	./Engine/Core/GameActor.h
+		./Engine/Core/Object.h
+		./Engine/Core/Component.h
+		./Engine/Core/ComponentType.h
+		./Engine/Core/GameActor.h
         ./Engine/Core/Transform.h
 
-	./Engine/Factory/ComponentFactory.h
-	./Engine/Factory/ComponentFactoryInitializer.h
+		./Engine/Factory/ComponentFactory.h
+		./Engine/Factory/ComponentFactoryInitializer.h
 
         ./Engine/Subsystems/ApplicationLayer/InputSystem.h
 
-        ./Engine/Subsystems/LogicLayer/Messaging/IBaseEvent.h
+        ./Engine/Subsystems/LogicLayer/Messaging/IEvent.h
+		./Engine/Subsystems/LogicLayer/Messaging/IEventListenerDelegate.h
+		./Engine/Subsystems/LogicLayer/Messaging/IEventSender.h
         ./Engine/Subsystems/LogicLayer/Messaging/IEventManager.h
+		./Engine/Subsystems/LogicLayer/Messaging/Event.h
 
         ./Engine/Subsystems/LogicLayer/GameState/GameState.h
         ./Engine/Subsystems/LogicLayer/GameState/GameStateManager.h
@@ -122,24 +125,26 @@ set(HDRS
         ./Engine/Subsystems/Subsystem.h
 	
 	#Demo header files
-	./Demo/Game.h
+		./Demo/Game.h
 )
  
 set(SRCS
 	#Engine source files
-	./Engine/MagEngine.cpp
+		./Engine/MagEngine.cpp
 
-	./Engine/Components/Camera/Camera.cpp
+		./Engine/Components/Camera/Camera.cpp
 
-	./Engine/Core/Object.cpp
-	./Engine/Core/Component.cpp
-	./Engine/Core/GameActor.cpp
+		./Engine/Core/Object.cpp
+		./Engine/Core/Component.cpp
+		./Engine/Core/GameActor.cpp
         ./Engine/Core/Transform.cpp
 
-	./Engine/Factory/ComponentFactory.cpp
-	./Engine/Factory/ComponentFactoryInitializer.cpp
+		./Engine/Factory/ComponentFactory.cpp
+		./Engine/Factory/ComponentFactoryInitializer.cpp
 
         ./Engine/Subsystems/ApplicationLayer/InputSystem.cpp
+
+		./Engine/Subsystems/LogicLayer/Messaging/Event.cpp
 
         ./Engine/Subsystems/LogicLayer/GameState/GameState.cpp
         ./Engine/Subsystems/LogicLayer/GameState/GameStateManager.cpp
@@ -148,8 +153,8 @@ set(SRCS
         ./Engine/Subsystems/Subsystem.cpp
 
 	#Demo source files
-	./Demo/main.cpp
-	./Demo/Game.cpp
+		./Demo/main.cpp
+		./Demo/Game.cpp
 )
  
 include_directories( ${OIS_INCLUDE_DIRS}
