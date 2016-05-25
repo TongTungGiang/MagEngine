@@ -117,6 +117,7 @@ set(HDRS
 		./Engine/Subsystems/LogicLayer/Messaging/IEventSender.h
         ./Engine/Subsystems/LogicLayer/Messaging/IEventManager.h
 		./Engine/Subsystems/LogicLayer/Messaging/Event.h
+		./Engine/Subsystems/LogicLayer/Messaging/EventManager.h
 
         ./Engine/Subsystems/LogicLayer/GameState/GameState.h
         ./Engine/Subsystems/LogicLayer/GameState/GameStateManager.h
@@ -145,6 +146,7 @@ set(SRCS
         ./Engine/Subsystems/ApplicationLayer/InputSystem.cpp
 
 		./Engine/Subsystems/LogicLayer/Messaging/Event.cpp
+		./Engine/Subsystems/LogicLayer/Messaging/EventManager.cpp
 
         ./Engine/Subsystems/LogicLayer/GameState/GameState.cpp
         ./Engine/Subsystems/LogicLayer/GameState/GameStateManager.cpp

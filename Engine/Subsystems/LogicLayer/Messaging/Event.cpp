@@ -37,7 +37,7 @@ void Event<S>::setSender(S* sender) const
 template<class S> // template for event sender classes
 const S* Event<S>::getSender() const
 {
-	return sender;
+	return dynamic_cast<S*>(sender);
 }
 
 }
